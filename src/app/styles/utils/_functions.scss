@@ -1,0 +1,15 @@
+@function rem-calc($values...) {
+  $result: ();
+  @each $value in $values {
+    @if type-of($value) == number {
+      $result: append($result, $value / 16 * 1rem, space);
+    } @else {
+      @warn "Value `#{$value}` is not a number.";
+    }
+  }
+  @if length($result) == 1 {
+    @return nth($result, 1);
+  } @else {
+    @return $result;
+  }
+}

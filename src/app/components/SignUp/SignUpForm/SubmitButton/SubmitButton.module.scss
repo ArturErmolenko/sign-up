@@ -1,0 +1,21 @@
+@import '@/main.scss';
+
+.submitButton {
+  @include text-primary;
+  @include gradient-bg($primary-gradient);
+
+  color: $c-white;
+  cursor: pointer;
+  text-align: center;
+
+  width: 100%;
+  max-width: rem-calc(240);
+  padding: rem-calc(15, 32);
+
+  border: none;
+  border-radius: 30px;
+
+  &:hover {
+    @include gradient-bg($primary-gradient-hover)
+  }
+}

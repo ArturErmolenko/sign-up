@@ -1,0 +1,24 @@
+@mixin gradient-bg($gradient) {
+    background: $gradient;
+  }
+  
+@mixin text-small {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $font-primary;
+  font-weight: 400;
+}
+
+@mixin text-primary {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 14px;
+  font-family: $font-primary;
+}
+
+@mixin text-large {
+  font-size: 28px;
+  line-height: 28px;
+  font-family: $font-primary;
+  font-weight: 700;
+}

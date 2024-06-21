@@ -1,0 +1,10 @@
+@import '@/main.scss';
+
+.formField {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  margin-bottom: rem-calc(20);
+}

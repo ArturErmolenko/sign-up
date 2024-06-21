@@ -1,0 +1,17 @@
+@import '@/main.scss';
+
+.validationMessages {
+  @include text-small;
+
+  color: $c-primary;
+
+  padding: rem-calc(0, 0, 30, 16);
+}
+
+.validationMessageError {
+  color: $c-error;
+}
+
+.validationMessageSuccess {
+  color: $c-success;
+}
