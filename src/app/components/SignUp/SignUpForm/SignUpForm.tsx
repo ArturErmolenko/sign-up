@@ -76,11 +76,10 @@ const SignUpForm: FC = () => {
               handlePasswordChange={handlePasswordChange}
             />
 
-              <ValidationMessage
-                passwordCriteria={passwordCriteria}
-                isSubmited={submitButtonClicked} 
-              />
-
+            <ValidationMessage
+              passwordCriteria={passwordCriteria}
+              isSubmited={submitButtonClicked} 
+            />
 
             <div className={styles.buttonContainer}>
               <SubmitButton onClick={handleSubmitButtonClick} />
