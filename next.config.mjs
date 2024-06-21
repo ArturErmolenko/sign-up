@@ -8,6 +8,13 @@ const nextConfig = {
     config.resolve.alias['@public'] = path.join(process.cwd(), 'public');
     return config;
   },
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/sign-up' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/sign-up' : '',
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
