@@ -8,7 +8,6 @@ This is a demo project for a sign-up form built with Next.js and Formik. It incl
 To run this project locally, clone the repository, navigate to the project directory, install dependencies, and run the development server:
 
 - git clone https://github.com/ArturErmolenko/sign-up.git
-- cd sign-up
 - npm i
 - npm run dev
 
