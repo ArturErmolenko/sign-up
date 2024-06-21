@@ -50,10 +50,12 @@ const SignUpForm: FC = () => {
       uppercaseMet: isUppercaseMet,
       numberMet: isNumberMet
     });
+
+    const isValidFormInputs = isMinLengthMet && isMaxLengthMet && isUppercaseMet && isNumberMet;
   
-    // if (isMinLengthMet && isMaxLengthMet && isUppercaseMet && isNumberMet) {
-    //   setMessage('Sign up success');
-    // } 
+    if (isValidFormInputs) {
+      alert('Sign up success');
+    } 
 
     setSubmitting(false);
   };

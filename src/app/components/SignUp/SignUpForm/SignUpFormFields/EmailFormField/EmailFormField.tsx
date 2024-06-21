@@ -35,7 +35,7 @@ const EmailFormField: FC<Props> = memo(({
       {shouldShowErrorMessage && (
         <ErrorMessage
           name="email"
-          component="div" 
+          component="p" 
           className={styles.errorMessage}
         />
       )}

@@ -1,4 +1,4 @@
-import React, { useState, FC, useCallback, memo } from 'react';
+import React, { FC, useCallback, memo } from 'react';
 import EmailFormField from './EmailFormField/EmailFormField';
 import PasswordFormField from './PasswordFormField/PasswordFormField';
 import { FormikHelpers } from 'formik';

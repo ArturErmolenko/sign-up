@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "static": "next build && next build && gh-pages -d out -t true",
-    "deploy": "next build && gh-pages -d out -t true"
+    "static": "next build && next export && touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME",
+    "deploy": "next build && gh-pages -d out -t true",
+    "predeploy": "npm run build"
   },
   "homepage": "https://ArturErmolenko.github.io/sign-up",
   "dependencies": {

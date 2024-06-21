@@ -56,12 +56,6 @@ const ValidationMessage: FC<Props> = memo(({
           {digitValidationText}
         </div>
     </div>
-
-    {/* {message && (
-      <div className={`${styles.formMessage} ${message === 'Sign up success' ? styles.success : styles.error}`}>
-        {message}
-      </div>
-    )} */}
   </>
   );
 });

@@ -1,17 +1,15 @@
 @import '@/main.scss';
 
 .input {
-  width: 100%;
+  position: relative;
   min-width: rem-calc(315);
 
   padding: rem-calc(10);
 
   border: 1px solid $c-grey;
   border-radius: 10px;
-  
-  
 
-  background: $c-white;
+  background-color: $c-white;
   color: $c-grey;
   outline: none;
 
@@ -31,9 +29,12 @@
 }
 
 .errorMessage {
+  @include text-small;
+  position: fixed;
+  transform: translateY(35px);
+
   color: $c-error;
-  margin-top: rem-calc(8);
-  padding-left: rem-calc(8);
+  padding-left: rem-calc(16);
 }
 
 .hidden {

@@ -9,17 +9,16 @@ export const validationSchema = Yup.object({
       .matches(/[A-Z]/, 'Password must contain at least one uppercase letter')
       .matches(/[0-9]/, 'Password must contain at least one number')
       .required('Password is required')
-  })
-
+});
 
 export const initialFormValues: FormValues = {
   email: '',
   password: '' 
-}
+};
 
 export const initialPasswordCriteria: PasswordCriteria = {
   minLengthMet: false,
   maxLengthMet: true,
   uppercaseMet: false,
   numberMet: false
-}
+};
